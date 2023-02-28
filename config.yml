@@ -1,0 +1,37 @@
+
+cp:
+  from: 'd:\mv'
+  to: 'd:\pure'
+  # If value is set to true, also copy directories.
+  keep_parent_dir: true
+  filters:
+    formats:
+      - mp4
+      - mv
+      - wmv
+      - rar
+      - zip
+      - 7z
+      - avi
+mv:
+  from: 'd:\pure'
+  to: 'e:\movie\pure'
+  # If value is set to false, only files will be moved, directories will be deleted.
+  keep_parent_dir: false
+  filters:
+    formats:
+      - mp4
+      - mv
+      - wmv
+      - rar
+      - zip
+      - 7z
+      - avi
+del:
+  path: 'C:\Users\刘东\Downloads'
+  filters:
+    #Size filter, formatted as '> 100M', '<=  10G' or '== 5K'.
+    #The units available are 'B', 'K', 'M', 'G', 'T'
+    size: '< 100M'
+    formats:
+      - torrent

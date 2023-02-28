@@ -1,0 +1,23 @@
+[package]
+name = "ntplayer"
+version = "0.1.0"
+edition = "2021"
+description = ""
+repository = ""
+rust-version = "1.66"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4.17"
+log4rs = {version = "1.2.0", features = ["background_rotation"]}
+serde = { version = "1.0.152", features = ["derive"] } #  Serializing and deserializing Rust data structures efficiently and generically
+serde_yaml = "0.9"
+crossbeam = "0.8.2" # Provides a set of tools for concurrent programming
+chrono = "0.4.23" # Date and time library for Rust
+walkdir = "2.3.2" # Recursively walk through dir and get files
+sdl2 = {version="0.35.2", features=["ttf", "image","gfx","mixer"]} # Video and audio library
+rsmpeg = "0.12.0+ffmpeg.5.1" # Media demuxing and decoding library
+rfd = "0.11.1" # Native file dialog
+static_init = "1.0.3"
+sysinfo = "0.28.0"
